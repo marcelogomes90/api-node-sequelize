@@ -9,4 +9,4 @@ app.use(routes);
 
 db.sync(() => console.log(`Banco de dados conectado: ${process.env.DB_NAME}`));
 
-app.listen(3306, () => console.log("Servidor iniciado!"));
+app.listen(3306, () => console.log("Servidor iniciado"));
