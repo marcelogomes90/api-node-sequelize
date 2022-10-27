@@ -17,4 +17,12 @@ export default db.define("clients", {
         allowNull: false,
         unique: true,
     },
+    profissao: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    idade: {
+        type: Sequelize.INTEGER.UNSIGNED,
+        allowNull: false,
+    },
 });
