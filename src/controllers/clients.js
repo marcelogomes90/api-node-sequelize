@@ -12,6 +12,8 @@ function addClient(req, res) {
     ClientRepository.create({
         nome: req.body.nome,
         email: req.body.email,
+        profissao: req.body.profissao,
+        idade: req.body.idade
     }).then((result) => res.json(result));
 }
 
@@ -20,6 +22,8 @@ async function updateClient(req, res) {
         {
             nome: req.body.nome,
             email: req.body.email,
+            profissao: req.body.profissao,
+            idade: req.body.idade
         },
         {
             where: {
