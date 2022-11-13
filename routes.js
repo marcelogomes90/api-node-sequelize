@@ -9,7 +9,6 @@ routes.use(function(req, res, next) {
     next();
 });
 
-
 routes.get("/clients", clients.findAll);
 routes.post("/clients", clients.addClient);
 routes.get("/clients/:id", clients.findClient);
