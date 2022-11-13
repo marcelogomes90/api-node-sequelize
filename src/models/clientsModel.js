@@ -4,7 +4,7 @@ import db from "../db.js";
 export default db.define("clients", {
     id: {
         type: Sequelize.INTEGER.UNSIGNED,
-        defaultValue: 1,
+        defaultValue: 0,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false,
