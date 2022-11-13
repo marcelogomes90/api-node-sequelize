@@ -4,9 +4,8 @@ import db from "../db.js";
 export default db.define("clients", {
     id: {
         type: Sequelize.INTEGER,
-        primaryKey: true,
         autoIncrement: true,
-        allowNull: false,
+        primaryKey: true,
     },
     nome: {
         type: Sequelize.STRING,
