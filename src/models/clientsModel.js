@@ -24,5 +24,6 @@ export default db.define("clients", {
     idade: {
         type: Sequelize.INTEGER,
         allowNull: true,
-    },
-});
+    }
+}, { initialAutoIncrement: 1, }
+);
