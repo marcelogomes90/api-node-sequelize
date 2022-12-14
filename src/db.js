@@ -1,13 +1,13 @@
 import { Sequelize } from "sequelize";
-import dotenv from "dotenv/config.js";
 
-const dbName = process.env.MYSQLDATABASE;
-const dbUser = process.env.MYSQLUSER;
-const dbHost = process.env.MYSQLHOST;
-const dbPassword = process.env.MYSQLPASSWORD;
+const DBNAME = process.env.MYSQLDATABASE;
+const DBUSER = process.env.MYSQLUSER;
+const DBHOST = process.env.MYSQLHOST;
+const DBPASSWORD = process.env.MYSQLPASSWORD;
+const DBPORT = process.env.MYSQLPORT;
 
-const sequelize = new Sequelize(dbName, dbUser, dbPassword, dbHost, {
-    dialect: "mysql",
+const sequelize = new Sequelize(DBNAME, DBUSER, DBHOST, DBPORT, DBPASSWORD, {
+    dialect: "mysql"
 });
 
 export default sequelize;
