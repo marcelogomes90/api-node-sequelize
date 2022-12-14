@@ -17,7 +17,7 @@ Clone o repositório na sua máquina
 
 ```git clone https://github.com/marcelogomes90/api-node-sequelize.git```
 
-Baixe as dependencias 
+Baixe as dependencias
 
 ```npn install```
 
