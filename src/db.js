@@ -1,4 +1,5 @@
 import { Sequelize } from "sequelize";
+import dotenv from "dotenv/config.js"
 
 const DBNAME = process.env.MYSQLDATABASE;
 const DBUSER = process.env.MYSQLUSER;
